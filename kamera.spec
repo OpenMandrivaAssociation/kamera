@@ -8,7 +8,7 @@ License: GPLv2 GFDL
 URL:     http://www.kde.org
 Source:  ftp://ftp.kde.org/pub/kde/stable/%version/src/%name-%version.tar.bz2
 BuildRequires: kdelibs4-devel >= 2:%{version}
-BuildRequires: libgphoto2-devel
+BuildRequires: gphoto2-devel
 
 %description
 Kamera ioslave.
