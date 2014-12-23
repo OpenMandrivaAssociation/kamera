@@ -1,12 +1,12 @@
 Name:		kamera
 Summary:	Kamera ioslave
-Version:	14.12.0
+Version:	4.14.3
 Release:	1
 Epoch:		2
 Group:		Graphical desktop/KDE
 License:	GPLv2 GFDL
 URL:		http://www.kde.org
-Source0:	ftp://ftp.kde.org/pub/kde/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
+Source:		ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	kdelibs4-devel
 BuildRequires:	pkgconfig(libgphoto2)
 
