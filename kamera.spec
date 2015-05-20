@@ -7,7 +7,7 @@ Group:		Graphical desktop/KDE
 License:	GPLv2 GFDL
 URL:		http://www.kde.org
 Source0:	ftp://ftp.kde.org/pub/kde/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
-BuildRequires:	kdelibs4-devel
+BuildRequires:	kdelibs-devel
 BuildRequires:	pkgconfig(libgphoto2)
 
 %description
