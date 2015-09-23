@@ -28,7 +28,7 @@ Kamera ioslave.
 %setup -q
 
 %build
-%cmake_kde4
+%cmake_kde4 -DCMAKE_MINIMUM_REQUIRED_VERSION=2.6
 %make
 
 %install
