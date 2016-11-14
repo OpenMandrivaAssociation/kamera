@@ -1,6 +1,6 @@
 Summary:	Kamera ioslave
 Name:		kamera
-Version:	16.08.2
+Version:	16.08.3
 Release:	1
 Epoch:		2
 Group:		Graphical desktop/KDE
