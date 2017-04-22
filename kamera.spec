@@ -1,6 +1,6 @@
 Summary:	Kamera ioslave
 Name:		kamera
-Version:	17.03.80
+Version:	17.04.0
 Release:	1
 Epoch:		2
 Group:		Graphical desktop/KDE
@@ -21,13 +21,27 @@ BuildRequires:	pkgconfig(libgphoto2)
 %description
 Kamera ioslave.
 
-%files
-%doc %{_docdir}/HTML/en/kcontrol/kamera
+%files -f kcmkamera.lang
 %doc COPYING  COPYING.DOC
 %{_qt5_plugindir}/*.so
 %{_datadir}/kservices5/camera.protocol
 %{_datadir}/kservices5/kamera.desktop
 %{_datadir}/solid/actions/solid_camera.desktop
+%doc %{_docdir}/HTML/en/kcontrol/kamera
+%lang(ca) %{_docdir}/HTML/ca/kcontrol/kamera
+%lang(cs) %{_docdir}/HTML/cs/kcontrol/kamera
+%lang(de) %{_docdir}/HTML/de/kcontrol/kamera
+%lang(es) %{_docdir}/HTML/es/kcontrol/kamera
+%lang(et) %{_docdir}/HTML/et/kcontrol/kamera
+%lang(fr) %{_docdir}/HTML/fr/kcontrol/kamera
+%lang(gl) %{_docdir}/HTML/gl/kcontrol/kamera
+%lang(it) %{_docdir}/HTML/it/kcontrol/kamera
+%lang(nl) %{_docdir}/HTML/nl/kcontrol/kamera
+%lang(pl) %{_docdir}/HTML/pl/kcontrol/kamera
+%lang(pt) %{_docdir}/HTML/pt/kcontrol/kamera
+%lang(pt_BR) %{_docdir}/HTML/pt_BR/kcontrol/kamera
+%lang(sv) %{_docdir}/HTML/sv/kcontrol/kamera
+%lang(uk) %{_docdir}/HTML/uk/kcontrol/kamera
 
 #----------------------------------------------------------------------
 
@@ -40,3 +54,4 @@ Kamera ioslave.
 
 %install
 %ninja_install -C build
+%find_lang kcmkamera
