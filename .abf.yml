@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   kamera-17.12.1.tar.xz: 13e0553b2e3ab0b72b1cd873044787334cc6219c
+sources:
+  kamera-17.12.2.tar.xz: cbfa79f11405a285f9d5cb493b22fdcb6142fcd6
