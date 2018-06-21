@@ -1,6 +1,6 @@
 Summary:	Kamera ioslave
 Name:		kamera
-Version:	 17.12.2
+Version:	 18.04.2
 Release:	1
 Epoch:		2
 Group:		Graphical desktop/KDE
@@ -40,6 +40,7 @@ Kamera ioslave.
 %lang(pl) %{_docdir}/HTML/pl/kcontrol/kamera
 %lang(pt) %{_docdir}/HTML/pt/kcontrol/kamera
 %lang(pt_BR) %{_docdir}/HTML/pt_BR/kcontrol/kamera
+%lang(ru) %{_docdir}/HTML/ru/kcontrol/kamera
 %lang(sv) %{_docdir}/HTML/sv/kcontrol/kamera
 %lang(uk) %{_docdir}/HTML/uk/kcontrol/kamera
 
@@ -54,4 +55,4 @@ Kamera ioslave.
 
 %install
 %ninja_install -C build
-%find_lang kcmkamera
+%find_lang kcmkamera --all-name --with-html
