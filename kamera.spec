@@ -1,6 +1,6 @@
 Summary:	Kamera ioslave
 Name:		kamera
-Version:	 18.11.90
+Version:	 18.12.0
 Release:	1
 Epoch:		2
 Group:		Graphical desktop/KDE
