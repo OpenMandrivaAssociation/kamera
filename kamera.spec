@@ -1,6 +1,6 @@
 Summary:	Kamera ioslave
 Name:		kamera
-Version:	20.07.80
+Version:	20.07.90
 Release:	1
 Epoch:		2
 Group:		Graphical desktop/KDE
