@@ -1,6 +1,6 @@
 Summary:	Kamera ioslave
 Name:		kamera
-Version:	21.12.2
+Version:	22.03.80
 Release:	1
 Epoch:		2
 Group:		Graphical desktop/KDE
@@ -23,11 +23,11 @@ Kamera ioslave.
 
 %files -f kcmkamera.lang
 %doc COPYING  COPYING.DOC
-%{_qt5_plugindir}/*.so
 %{_qt5_plugindir}/kf5/kio/kio_kamera.so
-%{_datadir}/kservices5/kamera.desktop
 %{_datadir}/solid/actions/solid_camera.desktop
 %{_datadir}/metainfo/org.kde.kamera.metainfo.xml
+%{_libdir}/qt5/plugins/plasma/kcms/systemsettings_qwidgets/kamera.so
+%{_datadir}/applications/kamera.desktop
 
 #----------------------------------------------------------------------
 
