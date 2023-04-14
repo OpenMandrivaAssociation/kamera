@@ -1,7 +1,7 @@
 Summary:	Kamera ioslave
 Name:		kamera
-Version:	22.12.3
-Release:	2
+Version:	23.03.90
+Release:	1
 Epoch:		2
 Group:		Graphical desktop/KDE
 License:	GPLv2 GFDL
@@ -22,17 +22,17 @@ BuildRequires:	pkgconfig(libgphoto2)
 Kamera ioslave.
 
 %files -f kcmkamera.lang
-%doc COPYING  COPYING.DOC
+%{_datadir}/qlogging-categories5/kamera.categories
 %{_qt5_plugindir}/kf5/kio/kio_kamera.so
 %{_datadir}/solid/actions/solid_camera.desktop
 %{_datadir}/metainfo/org.kde.kamera.metainfo.xml
-%{_libdir}/qt5/plugins/plasma/kcms/systemsettings_qwidgets/kamera.so
-%{_datadir}/applications/kamera.desktop
+%{_libdir}/qt5/plugins/plasma/kcms/systemsettings_qwidgets/kcm_kamera.so
+%{_datadir}/applications/kcm_kamera.desktop
 
 #----------------------------------------------------------------------
 
 %prep
-%setup -q
+%autosetup -p1
 %cmake_kde5
 
 %build
