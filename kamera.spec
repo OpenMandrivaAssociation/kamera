@@ -16,6 +16,7 @@ BuildRequires:	cmake(KF5KIO)
 BuildRequires:	cmake(KF5I18n)
 BuildRequires:	cmake(KF5Config)
 BuildRequires:	cmake(KF5DocTools)
+BuildRequires:	cmake(KF5KCMUtils)
 BuildRequires:	pkgconfig(libgphoto2)
 
 %description
