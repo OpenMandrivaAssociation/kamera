@@ -9,6 +9,7 @@ URL:		http://www.kde.org
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/kamera-%{version}.tar.xz
 BuildRequires:	cmake(Qt6)
 BuildRequires:	cmake(Qt6Core)
+BuildRequires:	cmake(Qt6Core5Compat)
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF6ConfigWidgets)
 BuildRequires:	cmake(KF6XmlGui)
