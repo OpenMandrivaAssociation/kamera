@@ -1,7 +1,7 @@
 Summary:	Kamera ioslave
 Name:		kamera
 Version:	23.08.4
-Release:	2
+Release:	3
 Epoch:		2
 Group:		Graphical desktop/KDE
 License:	GPLv2 GFDL
