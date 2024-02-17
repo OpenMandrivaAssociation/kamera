@@ -1,12 +1,19 @@
+%define git 20240217
+%define gitbranch release/24.02
+%define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 Summary:	Kamera ioslave
 Name:		plasma6-kamera
-Version:	24.01.95
-Release:	1
+Version:	24.01.96
+Release:	%{?git:0.%{git}.}1
 Group:		Graphical desktop/KDE
 License:	GPLv2 GFDL
 URL:		http://www.kde.org
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
+%if 0%{?git:1}
+Source0:	https://invent.kde.org/graphics/kamera/-/archive/%{gitbranch}/kamera-%{gitbranchd}.tar.bz2#/kamera-%{git}.tar.bz2
+%else
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/kamera-%{version}.tar.xz
+%endif
 BuildRequires:	cmake(Qt6)
 BuildRequires:	cmake(Qt6Core)
 BuildRequires:	cmake(Qt6Core5Compat)
@@ -34,7 +41,7 @@ Kamera ioslave.
 #----------------------------------------------------------------------
 
 %prep
-%autosetup -p1 -n kamera-%{version}
+%autosetup -p1 -n kamera-%{?git:%{gitbranchd}}%{!?git:%{version}}
 %cmake \
 	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
 	-G Ninja
