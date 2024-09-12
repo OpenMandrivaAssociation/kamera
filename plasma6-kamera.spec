@@ -3,7 +3,7 @@
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 Summary:	Kamera ioslave
 Name:		plasma6-kamera
-Version:	24.08.0
+Version:	24.08.1
 Release:	%{?git:0.%{git}.}1
 Group:		Graphical desktop/KDE
 License:	GPLv2 GFDL
