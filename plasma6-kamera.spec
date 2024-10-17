@@ -7,7 +7,7 @@ Version:	24.08.2
 Release:	%{?git:0.%{git}.}1
 Group:		Graphical desktop/KDE
 License:	GPLv2 GFDL
-URL:		http://www.kde.org
+URL:		https://www.kde.org
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 %if 0%{?git:1}
 Source0:	https://invent.kde.org/graphics/kamera/-/archive/%{gitbranch}/kamera-%{gitbranchd}.tar.bz2#/kamera-%{git}.tar.bz2
