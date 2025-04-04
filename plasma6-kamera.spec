@@ -4,7 +4,7 @@
 Summary:	Kamera ioslave
 Name:		plasma6-kamera
 Version:	24.12.3
-Release:	%{?git:0.%{git}.}2
+Release:	%{?git:0.%{git}.}3
 Group:		Graphical desktop/KDE
 License:	GPLv2 GFDL
 URL:		https://www.kde.org
