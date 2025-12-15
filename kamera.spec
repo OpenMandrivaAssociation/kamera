@@ -3,8 +3,8 @@
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 Summary:	Kamera ioslave
 Name:		kamera
-Version:	25.08.3
-Release:	%{?git:0.%{git}.}2
+Version:	25.12.0
+Release:	%{?git:0.%{git}.}1
 Group:		Graphical desktop/KDE
 License:	GPLv2 GFDL
 URL:		https://www.kde.org
